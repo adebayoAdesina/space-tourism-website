@@ -22,7 +22,7 @@ h2 {
   font-size: 100px !important;
 }
 
-h3 {
+h3.explore {
   font-family: 'Bellefair Regular' !important;
   font-size: 56px !important;
 }
@@ -102,4 +102,74 @@ p {
   color: #D0D6F9 !important;
   font-family: 'Barlow Condensed Regular' !important;
   text-align: left !important;
+}
+
+@media only screen and (max-width: 992px) and  (min-width: 768px){
+  h1 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 100px !important;
+  }
+  
+  h2 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 60px !important;
+  }
+  
+  h3.explore {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 46px !important;
+    text-align: center !important;
+  }
+  
+  h3 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 46px !important;
+    text-align: left !important;
+  }
+  
+  h4 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 30px !important;
+  }
+  
+  h5 {
+    font-family: 'Barlow Condensed Regular' !important;
+    font-size: 25px !important;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 90px !important;
+  }
+  
+  h2 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 40px !important;
+  }
+  
+  h3.explore {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 30px !important;
+    text-align: center !important;
+  }
+  
+  h3 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 30px !important;
+    text-align: left !important;
+  }
+  
+  h4 {
+    font-family: 'Bellefair Regular' !important;
+    font-size: 25px !important;
+  }
+  
+  h5 {
+    font-family: 'Barlow Condensed Regular' !important;
+    font-size: 20px !important;
+  }
+  
 }

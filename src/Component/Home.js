@@ -43,8 +43,8 @@ function Home () {
                     <Row>
                         <h1 className="my-2">SPACE</h1>
                     </Row>
-                    <Row>
-                        <p className="col-12">
+                    <Row id="homeText">
+                        <p className="col-12" id="homeText">
                             Let’s face it; if you want to go to space, you might as well 
                             genuinely go to outer space and not hover kind of on the 
                             edge of it. Well sit back, and relax because we’ll give you 
