@@ -235,11 +235,16 @@
     justify-content: space-around !important;
   }
 
+  .crewImage {
+    width: 300px;
+    height: 400px;
+  }
+
   #crewImage {
     width: 300px;
     height: 400px;
   }
-  
+
   .TechnologyResponsive {
     display: flex;
     flex-direction: column-reverse;

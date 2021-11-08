@@ -39,7 +39,7 @@ function CrewSpecialist({changeCrew}) {
                 </Row>
         </div>
         <div className="col-12 col-lg-6" id="crewCommanderTwo">
-            <img src={markShutttleworth} id="markShutttleworth"  id="crewImage" alt=" MARK SHUTTLEWORTH img"/>
+            <img src={markShutttleworth} id="markShutttleworth"  className="crewImage" alt=" MARK SHUTTLEWORTH img"/>
         </div>
             
     </Row>

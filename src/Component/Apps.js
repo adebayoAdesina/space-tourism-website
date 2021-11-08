@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+
 import Home from './Home';
 import Destination from './Destination';
 import Crew from './Crew';

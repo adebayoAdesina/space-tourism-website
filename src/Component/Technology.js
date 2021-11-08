@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container,  Button, Nav, Navbar, Row } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import TechnologyVehicle from './Technology/TechnologyVehicle';
 import TechnologyCapsule from './Technology/TechnologyCapsule';
