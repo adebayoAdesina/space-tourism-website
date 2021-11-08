@@ -24,7 +24,9 @@ function Crew() {
             <Container>
                 <Nav>
                   <Navbar.Brand>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+                    <Link to="/">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+                    </Link>
                   </Navbar.Brand>
                 </Nav>
                 <div className="col-md-0 col-lg-4">
@@ -33,11 +35,11 @@ function Crew() {
 
               <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="ms-auto py-3">
-                  <Nav.Link className="px-4"><Link to="/" id="links"><b>00</b> Home</Link></Nav.Link>
-                  <Nav.Link className="px-4"><Link to="/Destination" id="links"><b>01</b> DESTINATION</Link></Nav.Link>
-                  <Nav.Link className="px-4"><Link to="/Crew" id="links"><b>02</b> CREW</Link></Nav.Link>
-                  <Nav.Link className="px-4"><Link to="/Technology" id="links"><b>03</b> TECHNOLOGY</Link></Nav.Link>
+                <Nav className="ms-auto">
+                  <Link to="/" className="link"><li className="px-4 py-4 links navHover"><b>00</b> Home</li></Link>
+                  <Link to="/Destination" className="link"><li className="px-4 py-4 links navHover"><b>01</b> DESTINATION</li></Link>
+                  <Link to="/Crew" className="link"><li className="px-4 py-4 linksCrew navHover"><b>02</b> CREW</li></Link>
+                  <Link to="/Technology" className="link"><li className="px-4 py-4 links navHover"><b>03</b> TECHNOLOGY</li></Link>
                 </Nav>
                 </Navbar.Collapse>
               </Container>

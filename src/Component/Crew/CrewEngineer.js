@@ -4,8 +4,8 @@ import anoushenAnsari from '../../assets/crew/image-anousheh-ansari.png'
 
 function CrewEngineer({changeCrew}) {
     return (
-        <Row>
-            <div className="col-12 col-lg-6" id="crewCommander">
+        <Row >
+            <div className="col-12 col-lg-6">
                 <Row>
                     <div id="pickDestination" className="my-5">
                         <span>02</span> MEET YOUR CREW
@@ -19,12 +19,12 @@ function CrewEngineer({changeCrew}) {
 
                 </Row>
                 <Row>
-                    <h3 className="mt-4">
+                    <h3 className="mt-4" id="crewDetails">
                         ANOUSHEH ANSARI
                     </h3>
                 </Row>
                 <Row>
-                    <p className="colorParagraph">
+                    <p className="colorParagraph" id="crewDetails">
                         Anousheh Ansari is an Iranian American engineer and
                         co-founder of Prodea Systems. Ansari was the fourth self-funded
                         space tourist, the first self-funded woman to fly to the ISS,
@@ -41,7 +41,7 @@ function CrewEngineer({changeCrew}) {
                 </Row>
             </div>
             <div className="col-12 col-lg-6">
-                <img src={anoushenAnsari} alt=" ANOUSHEH ANSARI Img"/>
+                <img src={anoushenAnsari} alt=" ANOUSHEH ANSARI Img"  id="crewImage"/>
             </div>
                 
         </Row>

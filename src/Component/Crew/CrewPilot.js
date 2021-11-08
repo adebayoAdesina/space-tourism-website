@@ -5,7 +5,7 @@ import victorGlover from '../../assets/crew/image-victor-glover.png'
 function CrewPilot({changeCrew}) {
     return (
         <Row>
-            <div className="col-12 col-lg-6" id="crewCommander">
+            <div className="col-12 col-lg-6">
                 <Row>
                     <div id="pickDestination" className="my-5">
                         <span>02</span> MEET YOUR CREW
@@ -19,12 +19,12 @@ function CrewPilot({changeCrew}) {
 
                 </Row>
                 <Row>
-                    <h3 className="mt-4">
+                    <h3 className="mt-4" id="crewDetails">
                         VICTOR GLOVER
                     </h3>
                 </Row>
                 <Row>
-                    <p className="colorParagraph">
+                    <p className="colorParagraph" id="crewDetails">
                         Pilot Victor Glover Pilot on the first operational flight 
                         of the SpaceX Crew Dragon to the International Space Station. 
                         Glover is a commander in the U.S. Navy where he pilots an F/A-18.
@@ -41,7 +41,7 @@ function CrewPilot({changeCrew}) {
                 </Row>
             </div>
             <div className="col-12 col-lg-6">
-                <img src={victorGlover} alt="VICTOR GLOVER Img"/>
+                <img src={victorGlover} alt="VICTOR GLOVER Img"  id="crewImage"/>
             </div>
                 
         </Row>

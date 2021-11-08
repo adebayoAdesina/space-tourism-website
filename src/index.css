@@ -59,6 +59,30 @@ h5 {
   cursor: pointer;
 }
 
+.link {
+  text-decoration: none;
+  color: white !important;
+}
+
+.link:hover {
+  color: rgb(54,55,63) !important;
+}
+
+.navHover:hover {
+  text-decoration: none;
+  color: rgb(54,55,63) !important;
+  background-color: white;
+}
+
+.linksTechnology, .linksCrew, .linksDestination, .linksHome {
+  text-decoration: none;
+  color: white !important;
+  border-bottom: 3px solid #ffffff;
+}
+
+.links:hover {
+  color: rgb(54,55,63) !important;
+}
 #link:hover {
   /* padding-bottom: 10px !important; */
   border-bottom: 3px solid #ffffff;

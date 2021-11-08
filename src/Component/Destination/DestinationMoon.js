@@ -8,27 +8,27 @@ function DestinationMoon({solarFunction}) {
     return (
         <React.Fragment>
             <Row id="changes">
-                <div className="col-12 col-lg-6 pt-4 my-3">
+                <div className="col-12 col-lg-6 pt-2 my-3">
                     <Row>
                         <div className="my-5" id="destinationImages">
-                            <img src={Moon} alt="Moon Img"/>
+                            <img src={Moon} alt="Moon Img" id="destinationImage"/>
                         </div>
                     </Row>
                 </div>
 
-                <div className="col-12 col-lg-6 mt-5 pt-4">
-                    <Row className="mt-5 pt-5">
+                <div className="col-12 col-lg-6 mt-3 pt-2">
+                    <Row className="mt-5 pt-5 destination">
                         <div className="col-2 Destination_Moon" onMouseOver={(e)=>solarFunction('MOON')} id="links">MOON</div>
                         <div className="col-2" onMouseOver={(e)=>solarFunction('MAR')} id="links">MAR</div>
                         <div className="col-2" onMouseOver={(e)=>solarFunction('EUROPA')} id="links">EUROPA</div>
                         <div className="col-2" onMouseOver={(e)=>solarFunction('TITAN')} id="links">TITAN</div>
                     </Row>
                     <Row>
-                        <h3 className="col-4 my-4">MOON</h3>
+                        <h3 className="col-12 my-4" id="DestinationMoon">MOON</h3>
                     </Row>
 
                     <Row>
-                        <p className="colorParagraph">
+                        <p className="colorParagraph" id="DestinationMoon">
                             See our planet as you’ve never seen it before. A perfect
                             relaxing trip away to help regain perspective and come
                             back refreshed. While you’re there, take in some history
@@ -38,7 +38,7 @@ function DestinationMoon({solarFunction}) {
 
                     <hr className="mt-5 mb-3"/>
 
-                    <Row>
+                    <Row className=" destination">
                         <div className="col-4">
                             <div className="distance">
                                 AVG. DISTANCE 

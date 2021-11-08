@@ -4,8 +4,8 @@ import douglasHurey from '../../assets/crew/image-douglas-hurley.png'
 
 function CrewCommander({changeCrew}) {
     return (
-        <Row>
-            <div className="col-12 col-lg-6" id="crewCommander">
+        <Row id="crewCommander">
+            <div className="col-12 col-lg-6 crewResponsiveOne">
                 <Row>
                     <div id="pickDestination" className="my-5">
                         <span>02</span> MEET YOUR CREW
@@ -18,21 +18,21 @@ function CrewCommander({changeCrew}) {
 
                 </Row>
                 <Row>
-                    <h3 className="mt-4">
+                    <h3 className="mt-4" id="crewDetails">
                         DOUGLAS HURLEY
                     </h3>
                 </Row>
                 <Row>
-                    <p className="colorParagraph">
-                        Douglas Gerald Hurley is an American engineer, former <br/>
-                        Marine Corps pilot and former NASA astronaut. He <br/>
-                        launched into space for the third time as commander of <br/>
-                        Crew Dragon Demo-2.
+                    <p className="colorParagraph" id="crewDetails">
+                        Douglas Gerald Hurley is an American engineer, former
+                        Marine Corps pilot and former NASA astronaut. He
+                        launched into space for the third time as commander of
+                        Crew Dragon Demo-2.<br/>
                         <br/>
                     </p>
                 </Row>
                 <Row>
-                    <div style={{display: "flex"}} className="mt-5">
+                    <div style={{display: "flex"}} className="mt-5 a">
                         <div className="mx-2 Round1" id="round1" onMouseOver={(e)=>changeCrew('commander')}></div>
                         <div className="mx-2 Round4" onMouseOver={(e)=>changeCrew('specialist')}></div>
                         <div className="mx-2 Round2" onMouseOver={(e)=>changeCrew('pilot')}></div>
@@ -40,8 +40,8 @@ function CrewCommander({changeCrew}) {
                     </div>
                 </Row>
             </div>
-            <div className="col-12 col-lg-6">
-                <img src={douglasHurey} alt="DOUGLAS HURLEY Img"/>
+            <div className="col-12 col-lg-6 crewResponsiveTwo">
+                <img src={douglasHurey} alt="DOUGLAS HURLEY Img" id="crewImage"/>
             </div>
                 
         </Row>

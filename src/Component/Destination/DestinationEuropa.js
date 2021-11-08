@@ -7,51 +7,51 @@ function DestinationEuropa({solarFunction}) {
     return (
     <React.Fragment>
             <Row id="changes">
-                <div className="col-12 col-lg-6 pt-4 my-3">
+                <div className="col-12 col-lg-6 pt-2 my-3">
                     <Row>
                         <div className="my-5" id="destinationImages">
-                            <img src={Europa} alt="Europa Img"/>
+                            <img src={Europa} alt="Europa Img" id="destinationImage"/>
                         </div>
                     </Row>
                 </div>
 
-                <div className="col-12 col-lg-6 mt-5 pt-4">
-                    <Row className="mt-5 pt-5">
+                <div className="col-12 col-lg-6 mt-3 pt-2" >
+                    <Row className="mt-5 pt-5 destination">
                         <div className="col-2" onMouseOver={(e)=>solarFunction('MOON')} id="links">MOON</div>
                         <div className="col-2" onMouseOver={(e)=>solarFunction('MAR')} id="links">MAR</div>
                         <div className="col-2 Destination_Europa" onMouseOver={(e)=>solarFunction('EUROPA')} id="links">EUROPA</div>
                         <div className="col-2" onMouseOver={(e)=>solarFunction('TITAN')} id="links">TITAN</div>
                     </Row>
                     <Row>
-                        <h3 class="col-12 my-4">EUROPA</h3>
+                        <h3 className="col-12 my-4" id="DestinationEuropa">EUROPA</h3>
                     </Row>
 
                     <Row>
-                        <p class="colorParagraph">
-                            See our planet as you’ve never seen it before. A perfect <br/>
-                            relaxing trip away to help regain perspective and come <br/>
-                            back refreshed. While you’re there, take in some history <br/>
-                            by visiting the Luna 2 and Apollo 11 landing sites.
+                        <p class="colorParagraph" id="DestinationEuropa">
+                            The smallest of the four Galilean moons orbiting Jupiter,
+                            Europa is a winter lover’s dream. With an icy surface,
+                            it’s perfect for a bit of ice skating, curling, hockey,
+                            or simple relaxation in your snug wintery cabin.
                         </p>
                     </Row>
 
-                    <hr class="mt-5 mb-3"/>
+                    <hr className="mt-5 mb-3"/>
                     <Row>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="distance">
+                        <div className="row destination">
+                            <div className="col-4">
+                                <div className="distance">
                                     AVG. DISTANCE 
                                 </div>
-                                <h5 class="distance">
-                                    384,400 KM 
+                                <h5 className="distance">
+                                    628 MIL. KM 
                                 </h5>
                             </div>
-                            <div class="col-4">
-                                <div class="distance">
+                            <div className="col-4">
+                                <div className="distance">
                                     EST. Travel TIME 
                                 </div>
-                                <h5 class="distance">
-                                    3 DAYS 
+                                <h5 className="distance">
+                                    3 YEARS
                                 </h5>
                             </div>
                         </div>

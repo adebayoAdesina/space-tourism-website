@@ -29,6 +29,11 @@
   margin: 0 !important;
 }
 
+.destination {
+  text-align: center !important;
+  justify-self: center;
+}
+
 .App-home {
   background-image: url(../src/assets/home/background-home-desktop.jpg);
   background-repeat: no-repeat;
@@ -64,6 +69,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    text-align: center !important;
+    justify-self: center;
   }
 
   .App-crew {
@@ -72,6 +79,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    text-align: center !important;
+    justify-self: center;
   }
 
   .App-technology {
@@ -80,6 +89,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    text-align: center !important;
+    justify-self: center;
   }
 
   .App-destination {
@@ -88,7 +99,58 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    text-align: center !important;
+    justify-self: center;
   }
+
+  .destination {
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  #DestinationMoon, #DestinationTitans, #DestinationEuropa, #DestinationMar {
+    text-align: center !important;
+    justify-content: space-around;
+  }
+
+  #destinationImage {
+    width: 300px;
+    height: 300px;
+  }
+
+  #techCircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(54,55,63);
+    border: 1px solid white;
+    display: flex;
+  }
+
+  #Technologys {
+    text-align: center !important;
+    justify-content: space-around;
+  }
+
+  .techParent{
+    display: flex;
+  }
+
+  #crewDetails {
+    text-align: center !important;
+    justify-content: space-around !important;
+  }
+
+  .TechnologyResponsive {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #commanderImage {
+    width: 400px;
+    height: 500px;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -99,6 +161,8 @@
     background-size: cover;
     min-height: 100vh;
     text-align: center;
+    text-align: center !important;
+    justify-self: center;
   }
 
   .App-crew {
@@ -107,6 +171,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    text-align: center !important;
+    justify-self: center;
   }
 
   .App-technology {
@@ -115,6 +181,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    text-align: center !important;
+    justify-self: center;
   }
 
   .App-destination {
@@ -123,7 +191,71 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    text-align: center !important;
+    justify-self: center;
   }
+
+  #destinationImage {
+    width: 250px;
+    height: 250px;
+  }
+  /* #responsive-navbar-nav {
+    border: 2px solid white;
+  } */
+
+  .destination {
+    justify-content: space-around;
+  }
+
+  #DestinationMoon, #DestinationTitans, #DestinationEuropa, #DestinationMar {
+    text-align: center !important;
+    justify-content: space-around;
+  }
+
+  #techCircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(54,55,63);
+    border: 1px solid white;
+    display: flex;
+  }
+  
+  #Technologys {
+    text-align: center !important;
+    justify-content: space-around;
+  }
+
+  .techParent{
+    display: flex;
+  }
+
+  #crewDetails {
+    text-align: center !important;
+    justify-content: space-around !important;
+  }
+
+  #crewImage {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .TechnologyResponsive {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+ 
+
+  /* #crewCommander {
+    flex-direction: column;
+  }
+  .crewResponsiveOne{
+    order: 2;
+  }
+
+  .crewResponsiveTwo {
+    order: 1;
+  } */
 
 }
 
@@ -165,9 +297,12 @@
   height: 10px;
   border-radius: 50%;
 }
-#crewCommander {
+/* #crewCommander {
   text-align: left !important;
-}
+  float: right !important;
+} */
+
+
 
 #crew {
   color: rgb(133,134,139);

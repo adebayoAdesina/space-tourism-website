@@ -4,7 +4,7 @@ import markShutttleworth from '../../assets/crew/image-mark-shuttleworth.png'
 function CrewSpecialist({changeCrew}) {
     return ( 
         <Row>
-        <div className="col-12 col-lg-6" id="crewCommander">
+        <div className="col-12 col-lg-6">
             <Row>
                 <div id="pickDestination" className="my-5">
                     <span>02</span> MEET YOUR CREW
@@ -18,15 +18,15 @@ function CrewSpecialist({changeCrew}) {
 
             </Row>
             <Row>
-                <h3 className="mt-4">
+                <h3 className="mt-4" id="crewDetails">
                     MARK SHUTTLEWORTH
                 </h3>
             </Row>
             <Row>
-                <p className="colorParagraph">
+                <p className="colorParagraph" id="crewDetails">
                     Mark Richard Shuttleworth is the founder and CEO of
                     Canonical, the company behind the Linux-based Ubuntu operating system.
-                    Shuttleworth became the first South African to travel  to space as a space tourist.<br/><br/>
+                    Shuttleworth became the first South African to travel  to space as a space tourist.<br/>
                 </p>
             </Row>
             <Row>
@@ -38,8 +38,8 @@ function CrewSpecialist({changeCrew}) {
                     </div>
                 </Row>
         </div>
-        <div className="col-12 col-lg-6">
-            <img src={markShutttleworth} id="markShutttleworth" alt=" MARK SHUTTLEWORTH img"/>
+        <div className="col-12 col-lg-6" id="crewCommanderTwo">
+            <img src={markShutttleworth} id="markShutttleworth"  id="crewImage" alt=" MARK SHUTTLEWORTH img"/>
         </div>
             
     </Row>
