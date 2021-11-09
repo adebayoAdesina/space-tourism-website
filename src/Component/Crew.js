@@ -40,7 +40,7 @@ function Crew() {
               <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                  <Link to="/" className="link"><li className="px-4 py-4 links navHover"><b>00</b> Home</li></Link>
+                  <Link to="/" className="link"><li className="px-4 py-4 links navHover"><b>00</b> HOME</li></Link>
                   <Link to="/Destination" className="link"><li className="px-4 py-4 links navHover"><b>01</b> DESTINATION</li></Link>
                   <Link to="/Crew" className="link"><li className="px-4 py-4 linksCrew navHover"><b>02</b> CREW</li></Link>
                   <Link to="/Technology" className="link"><li className="px-4 py-4 links navHover"><b>03</b> TECHNOLOGY</li></Link>

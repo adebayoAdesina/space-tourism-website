@@ -131,6 +131,13 @@ p {
     font-size: 25px !important;
   }
   
+  .navHover {
+    font-size: smaller !important;
+    font-family: 'Barlow Condensed Regular' !important;
+    text-decoration: none;
+    color: white !important;
+    cursor: pointer;
+  }
 }
 
 /* MOBILE RESPONSIVENESS */
@@ -165,6 +172,14 @@ p {
   h5 {
     font-family: 'Barlow Condensed Regular' !important;
     font-size: 20px !important;
+  }
+
+  .navHover {
+    font-size: small !important;
+    font-family: 'Barlow Condensed Regular' !important;
+    text-decoration: none;
+    color: white !important;
+    cursor: pointer;
   }
   
 }
