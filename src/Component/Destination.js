@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
+
+
 import { Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+
 
 import DestinationMoon from './Destination/DestinationMoon';
 import DestinationEuropa from './Destination/DestinationEuropa';
@@ -10,19 +14,11 @@ import DestinationMars from './Destination/DestinationMars';
 
 
 
-
-
 function Destination() {
-    
     let [destinationChange, setDestinationChange] = useState({e: "MOON"})
-
     const solarFunction = (e) => {
         setDestinationChange({...destinationChange, e})
     }
-
-    useEffect(()=> {
-        
-    },[])
     return (
         <React.Fragment>
             <div className="App-destination">
@@ -32,7 +28,12 @@ function Destination() {
                             <Nav>
                                 <Navbar.Brand to="/">
                                 <Link to="/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <circle cx="24" cy="24" r="24" fill="#FFF"/>
+                                            <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/>
+                                        </g>
+                                    </svg>
                                 </Link>
                                 </Navbar.Brand>
                             </Nav>
@@ -53,13 +54,12 @@ function Destination() {
                     </Navbar>
                 </header>
 
-                <div className="container pt-5">        
+                <div className="container pt-2">        
                     <Row>
-                        <div id="pickDestination" className="mt-5">
-                            <span>01</span> Pick your destination
+                        <div id="pickDestinations" className="my-2">
+                            <span><b>01</b></span> PICK YOUR DESTINATION
                         </div>
                     </Row>
-                    
                    {destinationChange.e === "MOON" && <DestinationMoon solarFunction={solarFunction}/>}
                    {destinationChange.e === "EUROPA" && <DestinationEuropa solarFunction={solarFunction}/>}
                    {destinationChange.e === "TITAN" && <DestinationTitan solarFunction={solarFunction}/>}

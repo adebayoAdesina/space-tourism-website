@@ -1,22 +1,33 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
+
+
+
 import victorGlover from '../../assets/crew/image-victor-glover.png'
+
+
 
 function CrewPilot({changeCrew}) {
     return (
-        <Row>
-            <div className="col-12 col-lg-6">
+        <Row id="crewPilot">
+            <div className="col-12 col-lg-6 crewResponsiveOne">
                 <Row>
                     <div id="pickDestination" className="my-5">
-                        <span>02</span> MEET YOUR CREW
+                        <span><b>02</b></span> MEET YOUR CREW
                     </div>
                 </Row>
-                
+                <Row  id="roundsChangeOne">
+                    <div style={{display: "flex"}} className="mt-5">
+                        <div className="mx-2 Round1 mx-auto" onMouseOver={(e)=>changeCrew('commander')}></div>
+                        <div className="mx-2 Round4 mx-auto" onMouseOver={(e)=>changeCrew('specialist')}></div>
+                        <div className="mx-2 Round2 mx-auto" id="round2" onMouseOver={(e)=>changeCrew('pilot')}></div>
+                        <div className="mx-2 Round3 mx-auto" onMouseOver={(e)=>changeCrew('engineer')}></div>
+                    </div>
+                </Row>
                 <Row>
                     <h5 className="mt-5"  id="crew">
                         PILOT
                     </h5>
-
                 </Row>
                 <Row>
                     <h3 className="mt-4" id="crewDetails">
@@ -31,7 +42,7 @@ function CrewPilot({changeCrew}) {
                         He was a crew member of Expedition 64, and served as a station systems flight engineer.<br/>
                     </p>
                 </Row>
-                <Row>
+                <Row  id="roundsChangeTwo">
                     <div style={{display: "flex"}} className="mt-5">
                         <div className="mx-2 Round1" onMouseOver={(e)=>changeCrew('commander')}></div>
                         <div className="mx-2 Round4" onMouseOver={(e)=>changeCrew('specialist')}></div>
@@ -40,10 +51,9 @@ function CrewPilot({changeCrew}) {
                     </div>
                 </Row>
             </div>
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6 crewResponsiveTwo">
                 <img src={victorGlover} alt="VICTOR GLOVER Img"  id="crewImage"/>
             </div>
-                
         </Row>
     );
 }

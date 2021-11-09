@@ -1,20 +1,19 @@
 *{
-  /* margin: 0px !important; */
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-/* .App {
-  text-align: center;
-} */
-
 #links:hover {
   border-bottom: 2px solid white !important;
-  /* transition: border 4s ease-out !important; */
 }
 
 #pickDestination {
+  font-size: larger;
   text-align: left !important;
+}
+
+#pickDestinations {
+  font-size: larger;
 }
 
 .App-header {
@@ -23,8 +22,6 @@
   background-size: cover;
   min-height: 100vh;
   flex-direction: column;
-  /* justify-content: center; */
-  /* font-size: calc(10px + 2vmin); */
   color: white;
   margin: 0 !important;
 }
@@ -70,9 +67,88 @@
   color: black;
   font-size: 40px;
   border-radius: 50%;
-  
 }
 
+#pickDestinationMob {
+  display: none;
+  font-size: larger;
+}
+
+#technologyPortrait, #roundsChangeTwo {
+  display: block;
+}
+
+#technologyLandscape, #roundsChangeOne {
+  display: none;
+}
+
+#responsive-navbar-nav{
+  background-color: #212529;
+}
+
+.destinationfont {
+  font-size: 100px;
+}
+
+#carouselCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#crew {
+  color: rgb(133,134,139);
+}
+
+#destinationMoon {
+  display: none !important;
+}
+
+.Round1, .Round2, .Round3, .Round4 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(133,134,139);
+}
+
+#round1, #round2, #round3, #round4 {
+  background-color: #ffffff;
+}
+
+span {
+  color: rgb(54,55,63);
+}
+
+.launch {
+  font-family: 'Bellefair Regular' !important;
+  font-size: 50px !important;
+  text-align: left !important;
+}
+
+#techCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(54,55,63);
+  border: 1px solid white;
+  text-align: center;
+}
+
+.techCircle1, .techCircle2, .techCircle3 {
+  color: rgb(54,55,63) !important;
+  text-align: center !important;
+  background-color: white !important;
+}
+
+#markShutttleworth {
+  transform: scaleX(-1);
+}
+
+.Destination_Europa, .Destination_Mar, .Destination_Moon, .Destination__Titan {
+  border-bottom: 2px solid white !important;
+}
+
+/* TABLET RESPONSIVENESS */
 @media only screen and (max-width: 992px) and  (min-width: 768px){
   .App-home {
     background-color: #0B0D17;
@@ -135,7 +211,7 @@
     border-radius: 50%;
     background-color: rgb(54,55,63);
     border: 1px solid white;
-    display: flex;
+    text-align: center !important;
   }
 
   #Technologys {
@@ -173,12 +249,33 @@
     padding-top: 100px !important;
     background-color: white;
     color: black;
-    /* font-size: 40px; */
     border-radius: 50%;
-    
+  }
+
+  #pickDestinationMob {
+    display: block;
+    font-size: larger;
+  }
+
+  #pickDestinations {
+    font-size: larger;
+  }
+
+  #pickDestination {
+    display: none;
+    font-size: larger;
+    text-align: left !important;
+  }
+
+  #technologyPortrait {
+    display: none;
+  }
+  #technologyLandscape {
+    display: block;
   }
 }
 
+/* MOBILE RESPONSIVENESS */
 @media only screen and (max-width: 768px) {
   .App-home {
     background-color: #0B0D17;
@@ -225,9 +322,6 @@
     width: 250px;
     height: 250px;
   }
-  /* #responsive-navbar-nav {
-    border: 2px solid white;
-  } */
 
   .destination {
     justify-content: space-around;
@@ -242,9 +336,9 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    text-align: center !important;
     background-color: rgb(54,55,63);
     border: 1px solid white;
-    display: flex;
   }
   
   #Technologys {
@@ -289,9 +383,32 @@
     color: black;
     font-size: 40px;
     border-radius: 50%;
-    
   }
-  /* #crewCommander {
+
+  #pickDestinationMob {
+    display: block;
+    font-size: larger;
+  }
+
+  #pickDestinations {
+    font-size: larger;
+  }
+
+  #pickDestination {
+    display: none;
+    text-align: left !important;
+    font-size: larger;
+  }
+
+  #technologyPortrait, #roundsChangeTwo {
+    display: none;
+  }
+
+  #technologyLandscape, #roundsChangeOne {
+    display: block;
+  }
+
+  #crewCommander, #crewSpecialist, #crewPilot, #crewEnginner {
     flex-direction: column;
   }
   .crewResponsiveOne{
@@ -300,102 +417,13 @@
 
   .crewResponsiveTwo {
     order: 1;
-  } */
+  }
+
+  .Round1, .Round2, .Round3, .Round4 {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background-color: rgb(133,134,139);
+  }
 
 }
-
-#responsive-navbar-nav{
-  background-color: #212529;
-  /* background: inherit; */
-  /* position: absolute; */
-}
-
-/* #responsive-navbar-nav:before{
-  content: " ";
-  background: inherit; */
-  /* position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
-  filter: blur(10px);
-} */
-
-
-.destinationfont {
-  font-size: 100px;
-}
-
-#carouselCircle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-/* #crewCommander {
-  text-align: left !important;
-  float: right !important;
-} */
-
-
-
-#crew {
-  color: rgb(133,134,139);
-}
-
-#destinationMoon {
-  display: none !important;
-}
-
-.Round1, .Round2, .Round3, .Round4 {
-  width: 10px !important;
-  height: 10px !important;
-  border-radius: 50%;
-  background-color: rgb(133,134,139);
-}
-
-#round1, #round2, #round3, #round4 {
-  background-color: #ffffff;
-}
-
-
-span {
-  color: rgb(54,55,63);
-}
-
-
-.launch {
-  font-family: 'Bellefair Regular' !important;
-  font-size: 50px !important;
-  text-align: left !important;
-}
-
-#techCircle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: rgb(54,55,63);
-  border: 1px solid white;
-}
-
-.techCircle1, .techCircle2, .techCircle3 {
-  color: rgb(54,55,63) !important;
-  background-color: white !important;
-}
-
-#markShutttleworth {
-  transform: scaleX(-1);
-}
-
-.Destination_Europa, .Destination_Mar, .Destination_Moon, .Destination__Titan {
-  border-bottom: 2px solid white !important;
-}
-/* h1 {
-  font-family: ;
-} */
-
-/* h1 Bellefair Regular - 150px */
-/* h2 Bellefair Regular - 100px */
-/* h3 56px */
-/* h4 32px */
-/* h5 Barlow Condensed Regular -28px */

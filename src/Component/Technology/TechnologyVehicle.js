@@ -1,18 +1,23 @@
 import React from 'react';
 import { Row, Button } from 'react-bootstrap';
+
+
+
 import LaunchVehicle from '../../assets/technology/image-launch-vehicle-portrait.jpg'
+import LaunchVehicleLandscape from '../../assets/technology/image-launch-vehicle-landscape.jpg'
+
+
 
 function TechnologyVehicle ({TechnologyChange}) {
     return ( 
         <React.Fragment>
-            <Row className="my-5 TechnologyResponsive">
+            <Row className="mt-4 TechnologyResponsive">
                 <div className="col-12 col-lg-6 my-3">
                     <Row>
                         <div id="pickDestination" className="my-5">
-                            <span>03</span> SPACE LAUNCH 101
+                            <span><b>03</b></span> SPACE LAUNCH 101
                         </div>
-                    </Row>
-                    
+                    </Row>                    
                     <Row className="mt-4">
                         <div className="col-12 col-lg-3 techParent">
                             <Row className="mx-auto">
@@ -49,7 +54,8 @@ function TechnologyVehicle ({TechnologyChange}) {
                 </div>
 
                 <div className="col-12 col-lg-6">
-                    <img src={LaunchVehicle} alt="Launch Vehicle Img"/>
+                    <img src={LaunchVehicle} alt="Launch Vehicle Img" id="technologyPortrait"/>
+                    <img src={LaunchVehicleLandscape} alt="Launch Vehicle Img" id="technologyLandscape"/>
                 </div>
             </Row>
         </React.Fragment>

@@ -7,11 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 h1 {
   font-family: 'Bellefair Regular' !important;
   font-size: 150px !important;
@@ -45,7 +40,6 @@ h5 {
 
 #links {
   font-family: 'Barlow Condensed Regular' !important;
-  /* font-size: 28px !important; */
   text-decoration: none;
   color: white !important;
   cursor: pointer;
@@ -53,7 +47,6 @@ h5 {
 
 #link {
   font-family: 'Barlow Condensed Regular' !important;
-  /* font-size: 28px !important; */
   text-decoration: none;
   color: white !important;
   cursor: pointer;
@@ -83,13 +76,13 @@ h5 {
 .links:hover {
   color: rgb(54,55,63) !important;
 }
+
 #link:hover {
-  /* padding-bottom: 10px !important; */
   border-bottom: 3px solid #ffffff;
 }
 
 span {
-  color: #D0D6F9;
+  color: #D0D6F9 !important;
 }
 
 p {
@@ -104,6 +97,7 @@ p {
   text-align: left !important;
 }
 
+/* TABLET RESPONSIVENESS */
 @media only screen and (max-width: 992px) and  (min-width: 768px){
   h1 {
     font-family: 'Bellefair Regular' !important;
@@ -139,6 +133,7 @@ p {
   
 }
 
+/* MOBILE RESPONSIVENESS */
 @media only screen and (max-width: 768px) {
   h1 {
     font-family: 'Bellefair Regular' !important;
